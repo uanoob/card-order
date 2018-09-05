@@ -10,13 +10,13 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "source",
             src: ["fonts/**/*.{woff,woff2}", "css/**", "img/*.svg"],
-            dest: "build/",
+            dest: "dist/",
           },
         ],
       },
     },
     clean: {
-      build: ["build"],
+      build: ["dist"],
     },
     sass: {
       options: {
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       },
       style: {
         files: {
-          "build/css/style.css": "source/sass/style.scss",
+          "dist/css/style.css": "source/sass/style.scss",
         },
       },
     },
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
           processors: [require("autoprefixer")()],
         },
         dist: {
-          src: "build/css/*.css",
+          src: "dist/css/*.css",
         },
       },
     },
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
           report: "gzip",
         },
         files: {
-          "build/css/style.min.css": ["build/css/style.css"],
+          "dist/css/style.min.css": ["dist/css/style.css"],
         },
       },
     },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          "build/js/app.js": "source/js/app.js",
+          "dist/js/app.js": "source/js/app.js",
         },
       },
     },
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
           beautify: true,
         },
         files: {
-          "build/js/app.min.js": ["build/js/app.js"],
+          "dist/js/app.min.js": ["dist/js/app.js"],
         },
       },
     },
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "source/img/",
             src: ["**/*.{png,jpg,gif}"],
-            dest: "build/img/",
+            dest: "dist/img/",
           },
         ],
       },
@@ -93,7 +93,7 @@ module.exports = function(grunt) {
       },
       sprite: {
         files: {
-          "build/img/sprite.svg": ["source/img/icon-*.svg"],
+          "dist/img/sprite.svg": ["source/img/icon-*.svg"],
         },
       },
     },
@@ -107,7 +107,7 @@ module.exports = function(grunt) {
             dot: true,
             cwd: "source/",
             src: ["*.html"],
-            dest: "build/",
+            dest: "dist/",
             expand: true,
           },
         ],
@@ -136,10 +136,10 @@ module.exports = function(grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: ["build/*.html", "build/css/*.css", "build/js/*.js"],
+          src: ["dist/*.html", "dist/css/*.css", "dist/js/*.js"],
         },
         options: {
-          server: "build/",
+          server: "dist/",
           watchTask: true,
         },
       },
