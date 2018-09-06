@@ -1,11 +1,13 @@
 body {
-  margin: 0;
+  // border: 1px solid orangered;
+  margin: 0 auto;
   padding: 0;
+  max-width: $desktop-width;
 
   font-size: 18px;
-  line-height: 30px;
+  line-height: 27px;
   font-family: 'Tahoma', 'Arial', sans-serif;
-  color: #283645;
+  color: $bg-black;
   font-style: normal;
 }
 

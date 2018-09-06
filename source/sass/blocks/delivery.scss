@@ -1,0 +1,30 @@
+.delivery {
+  // border: 1px solid orangered;
+  padding-top: 85px;
+  padding-bottom: 100px;
+  background-color: $bg-grey;
+}
+
+.delivery__title {
+  margin: 0;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 27px;
+}
+
+.delivery__item {
+  // border: 1px solid orangered;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.delivery__description {
+  margin: 0;
+  line-height: 22px;
+}
+
+.delivery__image {
+  // border: 1px solid orangered;
+  height: 55px;
+}
