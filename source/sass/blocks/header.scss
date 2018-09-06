@@ -1,0 +1,59 @@
+.header {
+  margin-bottom: 100px;
+}
+
+.header__img {
+  // border: 1px solid orangered;
+  margin-top: 77px;
+}
+
+.header__info {
+  // border: 1px solid orangered;
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.header__subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.header__desc {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.header__price {
+  margin-bottom: 50px;
+  font-size: 48px;
+  line-height: 27px;
+}
+
+.header__buttons {
+  // border: 1px solid orangered;
+}
+
+.header__button {
+  margin-right: 40px;
+  margin-bottom: 10px;
+  padding: 20px 45px;
+  width: 175px;
+  color: $bg-white;
+  background-color: $bg-orange;
+  border: 2px solid $bg-orange;
+  border-radius: 10px;
+}
+
+.header__button-o {
+  padding: 20px 27px;
+  width: 285px;
+  color: $bg-orange;
+  background-color: $bg-white;
+  border: 2px solid $bg-orange;
+}
